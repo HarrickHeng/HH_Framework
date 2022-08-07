@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Role Animator Controller_Maria
+  m_Controller: {fileID: 9100000, guid: c4b9572f13ac9e142a5694f6e2676941, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: -203655887218126122, guid: bd51cfb054a3fb94aaa2846e877b4002, type: 3}
+    m_OverrideClip: {fileID: -203655887218126122, guid: bd51cfb054a3fb94aaa2846e877b4002, type: 3}
+  - m_OriginalClip: {fileID: -203655887218126122, guid: a70233af27851374694d29b740fa8a82, type: 3}
+    m_OverrideClip: {fileID: -203655887218126122, guid: a70233af27851374694d29b740fa8a82, type: 3}
+  - m_OriginalClip: {fileID: -203655887218126122, guid: ff27bb590772edf418ed87b5ae0f7fe5, type: 3}
+    m_OverrideClip: {fileID: -203655887218126122, guid: ff27bb590772edf418ed87b5ae0f7fe5, type: 3}
+  - m_OriginalClip: {fileID: -203655887218126122, guid: 9ea54037ec6206847a6dd7a396070e01, type: 3}
+    m_OverrideClip: {fileID: -203655887218126122, guid: 9ea54037ec6206847a6dd7a396070e01, type: 3}
+  - m_OriginalClip: {fileID: -203655887218126122, guid: de6d60ae7d79b6344ae3bfbe14257573, type: 3}
+    m_OverrideClip: {fileID: -203655887218126122, guid: de6d60ae7d79b6344ae3bfbe14257573, type: 3}
+  - m_OriginalClip: {fileID: -203655887218126122, guid: 49cd9bff84a329741855f6bc323446fa, type: 3}
+    m_OverrideClip: {fileID: -203655887218126122, guid: 49cd9bff84a329741855f6bc323446fa, type: 3}
+  - m_OriginalClip: {fileID: -203655887218126122, guid: 38a9dab0c90368547bd8a3ed0dc4e878, type: 3}
+    m_OverrideClip: {fileID: -203655887218126122, guid: 38a9dab0c90368547bd8a3ed0dc4e878, type: 3}
+  - m_OriginalClip: {fileID: -203655887218126122, guid: e03577c9e2e81c7448b3adc525ea9fbd, type: 3}
+    m_OverrideClip: {fileID: -203655887218126122, guid: e03577c9e2e81c7448b3adc525ea9fbd, type: 3}
