@@ -1,10 +1,13 @@
-/// <summary>
-/// 角色AI接口
-/// </summary>
-public interface IRoleAI
+namespace FSM.AI
 {
     /// <summary>
-    /// 执行AI
+    /// 角色AI接口
     /// </summary>
-    void DoAI();
+    public interface IRoleAI
+    {
+        /// <summary>
+        /// 执行AI
+        /// </summary>
+        void DoAI();
+    }
 }

@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
- 
+namespace Helper
+{
     public static class PathHelper
     {  
         public static string GameObjectPath(GameObject go, GameObject root = null)
@@ -19,4 +20,5 @@ using UnityEngine;
             return string.Join("/", pathList);
         }
     }
+}
 

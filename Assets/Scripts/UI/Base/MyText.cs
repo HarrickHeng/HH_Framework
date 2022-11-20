@@ -1,14 +1,11 @@
-﻿using DG.Tweening;
-using System.Collections;
-using System.Collections.Generic;
-using System.Text.RegularExpressions;
-using UnityEngine;
+﻿using System.Text.RegularExpressions;
+using DG.Tweening;
 using UnityEngine.UI;
 
 /// <summary>
 /// 1.有字体自动打印功能
 /// </summary>
-namespace UnityEngine.UI
+namespace UI.Base
 {
     public class MyText : Text
     {

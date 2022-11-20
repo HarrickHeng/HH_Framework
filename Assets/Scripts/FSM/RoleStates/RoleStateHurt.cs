@@ -1,23 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class RoleStateHurt : RoleStateAbstract
+namespace FSM.RoleStates
 {
-    public RoleStateHurt(RoleFSMMgr currRoleFSMMgr) : base(currRoleFSMMgr) { }
-
-    public override void OnEnter()
+    public class RoleStateHurt : RoleStateAbstract
     {
-        base.OnEnter();
-    }
+        public RoleStateHurt(RoleFSMMgr currRoleFSMMgr) : base(currRoleFSMMgr) { }
 
-    public override void OnUpdate()
-    {
-        base.OnUpdate();
-    }
+        public override void OnEnter()
+        {
+            base.OnEnter();
+        }
 
-    public override void OnLeave()
-    {
-        base.OnLeave();
+        public override void OnUpdate()
+        {
+            base.OnUpdate();
+        }
+
+        public override void OnLeave()
+        {
+            base.OnLeave();
+        }
     }
 }

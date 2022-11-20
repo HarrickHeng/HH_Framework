@@ -1,20 +1,23 @@
 using System.Reflection;
 using UnityEngine;
 
-public static class ReferenceCtrlHelper
+namespace Helper
 {
-    public static void CacheReferenceHandle(object target)
+    public static class ReferenceCtrlHelper
     {
-        var type = target.GetType();
-        var method = type.GetMethod("CacheReference", BindingFlags.Instance | BindingFlags.Public);
-        try
+        public static void CacheReferenceHandle(object target)
         {
-            method?.Invoke(target, null);
-        }
-        catch (TargetInvocationException ex)
-        {
-            var e = ex.InnerException;
-            Debug.LogError($"{type.FullName}.CacheReference: {e.Message}: \n{e.StackTrace}");
+            var type = target.GetType();
+            var method = type.GetMethod("CacheReference", BindingFlags.Instance | BindingFlags.Public);
+            try
+            {
+                method?.Invoke(target, null);
+            }
+            catch (TargetInvocationException ex)
+            {
+                var e = ex.InnerException;
+                Debug.LogError($"{type.FullName}.CacheReference: {e.Message}: \n{e.StackTrace}");
+            }
         }
     }
 }

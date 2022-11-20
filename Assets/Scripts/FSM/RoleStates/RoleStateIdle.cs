@@ -1,32 +1,33 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using Common;
 
-public class RoleStateIdle : RoleStateAbstract
+namespace FSM.RoleStates
 {
-    public RoleStateIdle(RoleFSMMgr currRoleFSMMgr) : base(currRoleFSMMgr) { }
-
-    public override void OnEnter()
+    public class RoleStateIdle : RoleStateAbstract
     {
-        base.OnEnter();
-        Animator.speed = 1.0f;
-        Animator.SetBool(ToAnimatorCondition.ToIdle.ToString(), true);
-        Animator.SetInteger("CurrState", (int)ERoleState.Idle01);
-    }
+        public RoleStateIdle(RoleFSMMgr currRoleFSMMgr) : base(currRoleFSMMgr) { }
 
-    public override void OnUpdate()
-    {
-        base.OnUpdate();
-        CurrAnimatorStateInfo = Animator.GetCurrentAnimatorStateInfo(0);
-        if (CurrAnimatorStateInfo.IsName(RoleAnimatorName.Idle01.ToString()))
+        public override void OnEnter()
         {
+            base.OnEnter();
+            Animator.speed = 1.0f;
+            Animator.SetBool(ToAnimatorCondition.ToIdle.ToString(), true);
             Animator.SetInteger("CurrState", (int)ERoleState.Idle01);
         }
-    }
 
-    public override void OnLeave()
-    {
-        base.OnLeave();
-        Animator.SetBool(ToAnimatorCondition.ToIdle.ToString(), false);
+        public override void OnUpdate()
+        {
+            base.OnUpdate();
+            CurrAnimatorStateInfo = Animator.GetCurrentAnimatorStateInfo(0);
+            if (CurrAnimatorStateInfo.IsName(RoleAnimatorName.Idle01.ToString()))
+            {
+                Animator.SetInteger("CurrState", (int)ERoleState.Idle01);
+            }
+        }
+
+        public override void OnLeave()
+        {
+            base.OnLeave();
+            Animator.SetBool(ToAnimatorCondition.ToIdle.ToString(), false);
+        }
     }
 }

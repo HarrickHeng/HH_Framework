@@ -3,18 +3,20 @@
 public abstract class MonoSingleton<T> : MonoBehaviour where T : MonoSingleton<T>
 {
     private static T m_Instance = null;
+
     public static T Instance
     {
         get
         {
             if (m_Instance == null)
             {
-                m_Instance = GameObject.FindObjectOfType(typeof(T)) as T;
+                m_Instance = FindObjectOfType(typeof(T)) as T;
                 if (m_Instance == null)
                 {
                     Creat();
                 }
             }
+
             return m_Instance;
         }
     }
@@ -22,7 +24,7 @@ public abstract class MonoSingleton<T> : MonoBehaviour where T : MonoSingleton<T
     private static void Creat()
     {
         m_Instance = new GameObject(
-            "Singleton of " + typeof(T).ToString(),
+            "Singleton of " + typeof(T),
             typeof(T)
         ).GetComponent<T>();
         m_Instance.Init();
@@ -36,7 +38,9 @@ public abstract class MonoSingleton<T> : MonoBehaviour where T : MonoSingleton<T
         }
     }
 
-    public virtual void Init() { }
+    public virtual void Init()
+    {
+    }
 
     private void OnApplicationQuit()
     {

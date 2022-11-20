@@ -1,22 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class UnCheckDictionary<TKey, TValue> : Dictionary<TKey, TValue>, IDictionary
+namespace Helper.Extensions
 {
-    public new TValue this[TKey key]
+    public class UnCheckDictionary<TKey, TValue> : Dictionary<TKey, TValue>, IDictionary
     {
-        get
+        public new TValue this[TKey key]
         {
-            if (this.ContainsKey(key))
-                return base[key];
-            return default;
-        }
-        set
-        {
-            if (this.ContainsKey(key))
-                base[key] = value;
-            else
-                this.Add(key, value);
+            get
+            {
+                if (this.ContainsKey(key))
+                    return base[key];
+                return default;
+            }
+            set
+            {
+                if (this.ContainsKey(key))
+                    base[key] = value;
+                else
+                    this.Add(key, value);
+            }
         }
     }
 }
