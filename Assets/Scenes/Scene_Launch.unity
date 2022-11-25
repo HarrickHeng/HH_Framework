@@ -959,6 +959,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d9a850f6fb248dd805211ad677db536, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mStandardWidth: 1280
+  mStandardHeight: 720
+  UICamera: {fileID: 148074915}
+  mUIRootCanvasScaler: {fileID: 774704902}
 --- !u!1 &1151707813
 GameObject:
   m_ObjectHideFlags: 0
@@ -1384,10 +1388,30 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1988337133857764, guid: d1285734c36d9b4409be8d2fddab1bab, type: 3}
       propertyPath: m_Name
-      value: UI_Loading 1
+      value: UI_Loading
+      objectReference: {fileID: 0}
+    - target: {fileID: 114015048614398324, guid: d1285734c36d9b4409be8d2fddab1bab, type: 3}
+      propertyPath: m_Size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114015048614398324, guid: d1285734c36d9b4409be8d2fddab1bab, type: 3}
+      propertyPath: m_Value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114015048614398324, guid: d1285734c36d9b4409be8d2fddab1bab, type: 3}
+      propertyPath: m_NumberOfSteps
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224492360831760898, guid: d1285734c36d9b4409be8d2fddab1bab, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224492360831760898, guid: d1285734c36d9b4409be8d2fddab1bab, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224492360831760898, guid: d1285734c36d9b4409be8d2fddab1bab, type: 3}
+      propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224895590960629200, guid: d1285734c36d9b4409be8d2fddab1bab, type: 3}
